@@ -2,7 +2,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
 
 // screens
 import Homepage from "./screens/Homepage";
@@ -10,12 +9,38 @@ import Landing from "./screens/Landing";
 import Destination from "./screens/Destination";
 import Settings from "./screens/Settings";
 
+import { Ionicons } from "@expo/vector-icons";
+
 const BottomTabs = createMaterialBottomTabNavigator();
 
 function Tabs() {
   return (
-    <BottomTabs.Navigator>
-      <BottomTabs.Screen name="Homepage" component={Homepage} />
+    <BottomTabs.Navigator
+    // screenOptions={({ route }) => ({
+    //   tabBarIcon: ({ focused, color, size }) => {
+    //     let iconName;
+
+    //     if (route.name === "Homepage") {
+    //       iconName = focused ? (
+    //         <Ionicons name="home-outline" size={24} color="black" />
+    //       ) : (
+    //         <Ionicons name="home-sharp" size={24} color="black" />
+    //       );
+    //     } else if (route.name === "Settings") {
+    //       iconName = focused ? (
+    //         <Ionicons name="md-settings-outline" size={24} color="black" />
+    //       ) : (
+    //         <Ionicons name="md-settings" size={24} color="black" />
+    //       );
+    //     }
+
+    //     return <Ionicons name={iconName} size={size} color={color} />;
+    //   },
+    //   tabBarActiveTintColor: "tomato",
+    //   tabBarInactiveTintColor: "gray",
+    // })}
+    >
+      <BottomTabs.Screen name="Home" component={Homepage} />
       <BottomTabs.Screen name="Settings" component={Settings} />
     </BottomTabs.Navigator>
   );
