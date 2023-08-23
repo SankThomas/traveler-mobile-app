@@ -27,7 +27,6 @@ export default function Homepage({ navigation }) {
               name="bell"
               size={24}
               color="#141230"
-              onPress={() => navigation.navigate("Settings")}
             />
 </Pressable>
           </View>
