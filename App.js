@@ -56,8 +56,8 @@ export default function App() {
         screenOptions={{
           headerShown: false,
           gestureEnabled: true,
-          gestureDirection: "horizontal",
-          animation: "slide_from_right",
+          gestureDirection: "vertical",
+          animation: "slide_from_bottom_up",
         }}
       >
         <Stack.Screen
