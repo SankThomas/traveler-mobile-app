@@ -21,7 +21,7 @@ export const data = [
     image:
       "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Diani",
-    desc: "Prepared is me marianne pleasure likewise debating. Wonder an unable except better stairs do ye admire. His and eat secure sex called esteem praise. So moreover as speedily differed branched ignorant. Tall are her knew poor now does then. Procured to contempt oh he raptures amounted occasion. One boy assure income spirit lovers set.",
+    desc: "Prepared is me marianne pleasure likewise debating. Wonder an unable except better stairs do ye admire. His and eat secure called esteem praise. So moreover as speedily differed branched ignorant. Tall are her knew poor now does then. Procured to contempt oh he raptures amounted occasion. One boy assure income spirit lovers set.",
     featured: false,
     stars: "4.5",
     location: "Kenya",
