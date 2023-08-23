@@ -16,7 +16,7 @@ export default function Destination({ route, navigation }) {
   return (
     <>
       <SafeAreaView style={styles.container}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.header}>
             <Text style={globals.heading}>{route.params.title}</Text>
             <Pressable onPress={() => navigation.navigate("Settings")}>

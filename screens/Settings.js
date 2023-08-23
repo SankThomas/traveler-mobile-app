@@ -6,7 +6,10 @@ import { globals } from "../styles/globals";
 export default function Settings({ navigation }) {
   return (
     <SafeAreaView>
-      <ScrollView style={globals.container}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        style={globals.container}
+      >
         <View style={styles.header}>
           <Text style={globals.heading}>Settings</Text>
         </View>

@@ -19,7 +19,7 @@ export default function Homepage({ navigation }) {
   return (
     <>
       <SafeAreaView style={styles.container}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.header}>
             <Text style={globals.heading}>Welcome</Text>
             <Pressable onPress={() => navigation.navigate("Settings")}>
