@@ -1,7 +1,6 @@
 import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Feather } from "@expo/vector-icons";
 import { globals } from "../styles/globals";
 
 export default function Settings({ navigation }) {
@@ -10,7 +9,6 @@ export default function Settings({ navigation }) {
       <ScrollView style={globals.container}>
         <View style={styles.header}>
           <Text style={globals.heading}>Settings</Text>
-          <Feather name="bell" size={24} color="#141230" />
         </View>
 
         <View style={styles.profile}>

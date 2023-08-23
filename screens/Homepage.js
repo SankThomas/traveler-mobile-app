@@ -8,7 +8,7 @@ import {
   Pressable,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Feather } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import { globals } from "../styles/globals";
 import { data } from "../data/data";
 import { Entypo } from "@expo/vector-icons";
@@ -23,7 +23,7 @@ export default function Homepage({ navigation }) {
           <View style={styles.header}>
             <Text style={globals.heading}>Welcome</Text>
             <Pressable onPress={() => navigation.navigate("Settings")}>
-              <Feather name="bell" size={24} color="#141230" />
+              <Ionicons name="settings-outline" size={24} color="#141230" />
             </Pressable>
           </View>
 
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   },
   cards: {
     alignItems: "center",
-    marginTop: 20,
+    marginVertical: 20,
     gap: 20,
   },
   card: {
