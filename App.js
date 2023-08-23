@@ -57,7 +57,7 @@ export default function App() {
           headerShown: false,
           gestureEnabled: true,
           gestureDirection: "vertical",
-          animation: "slide_from_bottom_up",
+          animation: "slide_from_bottom",
         }}
       >
         <Stack.Screen
