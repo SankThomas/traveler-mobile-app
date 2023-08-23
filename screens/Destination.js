@@ -22,7 +22,12 @@ export default function Destination({ route, navigation }) {
         <ScrollView>
           <View style={styles.header}>
             <Text style={globals.heading}>{route.params.title}</Text>
-            <Feather name="bell" size={24} color="#141230" />
+            <Feather
+              name="bell"
+              size={24}
+              color="#141230"
+              onPress={() => navigation.navigate("Settings")}
+            />
           </View>
 
           <View style={styles.destinationContainer}>
