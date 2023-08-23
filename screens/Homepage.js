@@ -22,13 +22,9 @@ export default function Homepage({ navigation }) {
         <ScrollView>
           <View style={styles.header}>
             <Text style={globals.heading}>Welcome</Text>
-<Pressable onPress={() => navigation.navigate("Settings")}>
-            <Feather
-              name="bell"
-              size={24}
-              color="#141230"
-            />
-</Pressable>
+            <Pressable onPress={() => navigation.navigate("Settings")}>
+              <Feather name="bell" size={24} color="#141230" />
+            </Pressable>
           </View>
 
           <View style={styles.cards}>
